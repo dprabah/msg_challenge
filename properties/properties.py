@@ -33,7 +33,7 @@ final_column_key = 'final_column_key'
 
 #Model Properties [start]
 learning_rate = 0.01
-epochs = 2
+epochs = 100
 batch_size = 16
 embed_dim = 500
 max_len = 4
