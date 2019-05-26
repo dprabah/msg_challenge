@@ -43,18 +43,17 @@ def convert_facing_numeric(facing):
 
 
 def convert_numeric_to_facing(x):
-    if x == 1 or x == '1':
+    if x == 0 or x == '0':
         return 'F'
-    elif x == 2 or x == '2':
+    elif x == 1 or x == '1':
         return 'L'
-    elif x == 3 or x == '3':
+    elif x == 2 or x == '2':
         return 'R'
     else:
         return 'X'
 
 
 def retrieve_data(data_set):
-    print('Retrieving data')
     data = pd.read_csv(data_set, encoding="ISO-8859-1", lineterminator='\n')
     data = data.copy()
     return data

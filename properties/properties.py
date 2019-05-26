@@ -8,7 +8,7 @@ training_data_set = src_folder_path+training_data_folder_path+name
 testing_dataset_name = 'msg_test.csv'
 testing_data_set = src_folder_path+training_data_folder_path+testing_dataset_name
 
-final_output_dataset_name = 'final_output_dataset.csv'
+final_output_dataset_name = 'output_dataset.csv'
 final_output_dataset = src_folder_path+training_data_folder_path+final_output_dataset_name
 
 Id_key='Id'
@@ -33,8 +33,8 @@ final_column_key = 'final_column_key'
 
 #Model Properties [start]
 learning_rate = 0.01
-epochs = 100
-batch_size = 16
+epochs = 80
+batch_size = 32
 embed_dim = 500
 max_len = 4
 seed = 7
